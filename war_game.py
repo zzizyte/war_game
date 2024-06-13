@@ -10,7 +10,30 @@ import pydealer
 
 
 def main():
+    first_player, second_player = get_player_names()
+    player_one_cards, player_two_cards = prepare_cards()
+
+def prepare_cards():
+    deck = pydealer.Deck()
+    deck.shuffle()
+    player_one_cards = list(deck.deal(26))
+    player_two_cards = list(deck.deal(26))
+    return player_one_cards, player_two_cards
+
+def get_player_names():
+    first_player = input("First Player: ").strip().title()
+    second_player = input("Second Player: ").strip().title()
+    return first_player, second_player
+
+def play_game():
     pass
+
+def play_war():
+    pass
+    
+    
+#first_player_card.value > second_player_card.value:
+    
 
 if __name__ == "__main__":
     main()
