@@ -1,3 +1,5 @@
+import pydealer
+
 #create deck
 #randomize deck
 #separate to two decks
@@ -5,3 +7,10 @@
 #winner puts the cards at the end of the deck
 # if value of cards are equal, both players open second card face down and another card face up.
 #repeat value check
+
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
